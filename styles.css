@@ -28,6 +28,89 @@
 * take a screenshot at laptop and Moto G4 device sizes in Devtools
 */
 
-body {
+/*body {
   font: 100% "Poppins", sans-serif;
+  
+}*/
+
+* {
+  box-sizing: border-box;       /* general style*/
 }
+
+body{
+  background-color:	#DCDCDC;   /*the style for all body part*/
+  
+}
+
+div {                                /* this is the style of container of the flex box*/
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding:60px;
+  
+
+}
+
+
+
+
+
+section {                   /*the style of the 2sections in html */
+  border: 2px solid gray;
+  border-radius: 5px;
+  border-redius: 3px;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "img name" 
+    "list list"  ; 
+  width: 400px;
+    
+}
+
+img {                       /*the style of the 2 imgs in html*/
+  grid-area: img;
+  
+  /*border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(border.png) 30 stretch;*/
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+
+}
+
+
+
+ p , h1 {                  /*the style of the p and h1 in the header */
+  text-align: center; 
+   font-size: 30px;
+}
+
+
+h2 {                               /*the style of h2 in the sections for Haliema & Maha*/
+  vertical-align: text-top;
+  font-size: 200%;
+  float: right;
+ /* margin-left: 20px;*/
+  font-family: cursive;
+  grid-area: name;
+}
+ol {                            /*the style of the list using grid*/
+  grid-area: list;
+  font-size: 20px;
+}
+
+Footer h3{                          /* footer style*/
+  text-align: center; 
+  padding-top: 50px;
+  
+}
+
+                                               
+@media only screen and (max-width: 768px) {     /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
