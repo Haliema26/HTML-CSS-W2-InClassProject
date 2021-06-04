@@ -59,6 +59,7 @@ section {
     "img name"
     "list list";
   width: 400px;
+  margin: 5px;
 }
 
 img {
@@ -102,9 +103,13 @@ Footer h3 {
   padding-top: 50px;
 }
 
-@media only screen and (max-width: 768px) {                            /* For mobile phones: */
-                      
-  [class*="col-"] {
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  body {
+    width: 100;
+  }
+  div section ol {
+    flex-direction: column;
     width: 100%;
   }
 }
